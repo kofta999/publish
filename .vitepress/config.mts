@@ -8,6 +8,7 @@ import { generateSidebar } from "../lib/generate-sidebar";
 export default defineConfig({
   title: "Kofta's Docs",
   description: "My published notes and docs",
+  base: "/publish",
 
   markdown: {
     config: (md) => {
