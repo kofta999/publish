@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "vitepress dev",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@mdit/plugin-tasklist": "^0.22.2",
+    "@types/node": "^25.0.3",
+    "vitepress": "^1.6.4"
+  }
+}
