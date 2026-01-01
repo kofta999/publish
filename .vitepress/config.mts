@@ -6,8 +6,9 @@ import { generateSidebar } from "../lib/generate-sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Kofta's Docs",
-  description: "My published notes and docs",
+  title: "Mostafa's Website",
+  description:
+    "Mostafa Mahmoud | Software Engineer. Deep dives into Backend Systems, Cloud Architecture, and Technical Notes.",
   base: "/publish/",
 
   markdown: {
