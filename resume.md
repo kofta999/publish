@@ -69,7 +69,7 @@ _Hono, PostgreSQL, Next.js, Cloud-Ready Architecture_
 - Led development for a university-grade platform handling complex bylaws and student registration.
 - Focused on type-safe backend patterns using Hono and Prisma.
 
-### **Tadoku (Eroge-Abyss)**
+### **Tadoku**
 
 _Rust, Svelte, Tauri_
 
