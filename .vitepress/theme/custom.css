@@ -1,11 +1,20 @@
 /* Makes the hero image a circle */
 .VPImage.image-src {
-  border-radius: 50%;
-  object-fit: cover;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Optional: Add a subtle border or glow to match your brand */
 .VPImage.image-src {
-  border: 2px solid var(--vp-c-brand);
-  padding: 4px;
+    border: 2px solid var(--vp-c-brand);
+    padding: 4px;
+}
+
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(
+        120deg,
+        #bd34fe,
+        #41d1ff
+    );
 }
