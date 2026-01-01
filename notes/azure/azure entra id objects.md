@@ -17,7 +17,7 @@ Comprehensive management of users, groups, application identities, and devices.
     - Dynamic User/Device: Automated based on rules (e.g., job title or department). **Requires Entra ID P1/P2 license.**
 
 ### App Identities
-- Service Principal: An identity created for use with applications, hosted services, and automated tools to access Azure resources.
+- Service Principal: An identity created for use with applications, hosted services, and automated tools to access Azure resources. Commonly used in CI/CD pipelines and IaC.
 - Managed Identities: A type of service principal automatically managed by Azure. Eliminates the need for developers to manage credentials.
     - System-assigned: Tied to a single resource.
     - User-assigned: Independent lifecycle, can be assigned to multiple resources.

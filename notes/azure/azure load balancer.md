@@ -1,5 +1,5 @@
 2025-12-28 11:42
-Tags: #aws z
+Tags: #azure
 ##### Content
 ### Azure Load Balancer
 

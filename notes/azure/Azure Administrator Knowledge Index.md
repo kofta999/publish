@@ -1,5 +1,4 @@
 # Azure Administrator Knowledge Index
-
 ## Links
 - [Official Microsoft's Practice Exam](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications)
 - [Reddit Tips (check other posts too)](https://www.reddit.com/r/AzureCertification/comments/1obypd0/how_i_passed_the_az104_as_a_20_year_old_with_no/)
@@ -13,7 +12,6 @@
 - [iTi Exam Dumps](https://drive.google.com/drive/folders/1-BlMEFS1m64-bLx4hLAl9ATHWRrjlgyr?usp=sharing)
 
 ---
-
 ## Identity
 - [[azure identity fundamentals]]
 - [[azure entra id overview]]
@@ -58,6 +56,7 @@
 - [[azure service endpoints private link and dns]]
 - [[azure network virtual appliances]]
 - [[azure application gateway]]
+- [[azure load balancer]]
 
 ## Compute
 #### VM and VMSS
@@ -79,8 +78,18 @@
 - [[azure app service]]
 - [[azure functions and logic apps]] 
 
----
+## Others
+- [[azure backup and restore]]
+- [[azure log analytics workspaces]]
 
+---
+### Currently Missing Skills
+- [ ] ARM Templates details
+- [ ] Azure Powershell
+- [ ] Monitoring, alerts, action groups
+- [ ] DR
+
+---
 # Admin Skills
 ##### Phase 1: Basic Administration (The "Portal" Skills)
 - [x] **User Management:** Create, delete, and invite guest users. Understand how to restore a deleted user (within 30 days).

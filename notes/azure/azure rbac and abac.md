@@ -21,10 +21,34 @@ Azure Role-Based Access Control (RBAC) manages "Who" can do "What" at a specific
 - Created using JSON.
 - **AssignableScopes:** Defines where the role can be used (e.g., specific subscriptions or RGs).
 
-### Exam Traps
-- **Inheritance:** Permissions always flow down. You cannot "Deny" a permission at a lower level if it was "Allowed" at a higher level (unless using Blueprints or Deny Assignments, which are rare).
-- **NotActions:** This is not a "Deny." If a user is assigned a role with an "Action" that allows something, and a "NotAction" that excludes it, they still might get the permission from a different role assignment.
-- **ABAC:** Adds "Conditions" to RBAC (e.g., "Allow user to read blobs only if the blob has the tag Project=Alpha").
+
+Azure uses an **Additive** model for permissions. Your effective permissions are the sum of all roles assigned to you.
+### Role Definition Types
+1. **Actions:** Operations the role *grants*.
+2. **NotActions:** Operations *subtracted* from the wildcard (`*`) in the Actions list.
+3. **DataActions:** Permissions for the data plane (e.g., reading a blob, not just the account).
+4. **NotDataActions:** Subtractions from the data plane wildcard.
+
+### NotActions vs. Deny Assignments
+| Feature       | NotActions                              | Deny Assignments                       |
+| :------------ | :-------------------------------------- | :------------------------------------- |
+| **Purpose**   | Simplifies role creation (Subtraction). | Enforces strict protection (Blocking). |
+| **Evaluated** | Combined with other roles (Additive).   | Evaluated first (Absolute).            |
+| **Creator**   | User-defined in Custom Roles.           | System-defined (Blueprints/Stacks).    |
+
+### The "Hierarchy of No"
+1. **Deny Assignment:** If this exists, the action is **BLOCKED**.
+2. **Role Assignment (Allow):** If an Action exists here, the action is **ALLOWED**.
+3. **Implicit Deny:** If no role grants the action, the action is **BLOCKED**.
+
+### Exam-Trap: The "NotAction" Fallacy
+- **Question:** A user has Role A (Actions: `*`, NotActions: `*/delete`) and Role B (Actions: `*/delete`). Can they delete?
+- **Answer:** **Yes.** NotActions only subtracts from the specific role it is in. It does not block permissions granted by other roles.
+
+### ABAC (Attribute-Based Access Control)
+- Extends RBAC using **Conditions**.
+- **Use Case:** "Allow a user to contribute to Storage Blobs *only if* the blob has the tag 'Project=X'."
+- Primarily used for **Storage Blob** and **Queue** data actions.
 
 ##### References
 [[governance]]
