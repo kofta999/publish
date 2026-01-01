@@ -8,7 +8,6 @@ export function generateSidebar(
 ): DefaultTheme.SidebarItem[] {
   // 1. Resolve path to your index file
   const indexPath = path.resolve(__dirname, "..", index);
-  console.log(indexPath);
   if (!fs.existsSync(indexPath)) return [];
 
   const content = fs.readFileSync(indexPath, "utf-8");
