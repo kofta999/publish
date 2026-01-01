@@ -1,0 +1,11 @@
+/* Makes the hero image a circle */
+.VPImage.image-src {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Optional: Add a subtle border or glow to match your brand */
+.VPImage.image-src {
+  border: 2px solid var(--vp-c-brand);
+  padding: 4px;
+}

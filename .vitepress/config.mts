@@ -23,7 +23,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Notes", link: "/notes-index" },
+      { text: "Study Notes", link: "/notes" },
     ],
 
     sidebar: {
