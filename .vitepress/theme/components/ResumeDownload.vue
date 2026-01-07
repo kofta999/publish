@@ -1,6 +1,6 @@
 <template>
     <div class="download-container">
-        <a href="assets/resume.pdf" download class="download-button">
+        <a href="resume.pdf" download class="download-button">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

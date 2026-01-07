@@ -7,7 +7,7 @@ hero:
   text: "Backend Engineer & Cloud Architect"
   tagline: Building high-performance systems and exploring scalable cloud infrastructure.
   image:
-    src: https://github.com/kofta999.png
+    src: "profile.png"
     alt: Mostafa Mahmoud
   actions:
     - theme: brand
