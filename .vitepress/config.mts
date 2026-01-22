@@ -38,6 +38,16 @@ export default defineConfig({
           ),
         },
       ],
+      "/notes/aws": [
+        {
+          text: "AWS Cloud Practitioner",
+          link: "/notes/aws/AWS%20Cloud%20Practitioner%20Knowledge%20Index",
+          items: generateSidebar(
+            "./notes/aws/AWS Cloud Practitioner Knowledge Index.md",
+            "/notes/aws",
+          ),
+        },
+      ],
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/kofta999" }],

@@ -3,11 +3,11 @@ import path from "node:path";
 import type { DefaultTheme } from "vitepress";
 
 export function generateSidebar(
-  index: string,
-  basePath: string,
+  indexFilePath: string,
+  baseNotesPath: string,
 ): DefaultTheme.SidebarItem[] {
   // 1. Resolve path to your index file
-  const indexPath = path.resolve(__dirname, "..", index);
+  const indexPath = path.resolve(__dirname, "..", indexFilePath);
   if (!fs.existsSync(indexPath)) return [];
 
   const content = fs.readFileSync(indexPath, "utf-8");
@@ -44,7 +44,7 @@ export function generateSidebar(
       currentGroup.items?.push({
         text: linkTarget,
         // Prepend the custom basePath and ensure leading/trailing slashes are handled
-        link: `${basePath.replace(/\/$/, "")}/${linkTarget}`,
+        link: `${baseNotesPath.replace(/\/$/, "")}/${linkTarget}`,
       });
     }
   });
