@@ -48,6 +48,16 @@ export default defineConfig({
           ),
         },
       ],
+      "/notes/aws-saa": [
+        {
+          text: "AWS Solutions Architect",
+          link: "/notes/aws-saa/AWS%20Solutions%20Architect%20Associate%20Knowledge%20Index",
+          items: generateSidebar(
+            "./notes/aws-saa/AWS Solutions Architect Associate Knowledge Index.md",
+            "/notes/aws-saa",
+          ),
+        },
+      ],
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/kofta999" }],
