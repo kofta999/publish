@@ -19,12 +19,12 @@ Because all IPv6 addresses are public and internet-routable, attaching a standar
 
 ### SAA Exam "Scenario" Table
 
-| If the requirement is... | Use This Strategy: |
-| :--- | :--- |
-| "Allow EC2 instances to download updates over IPv6 while blocking all inbound IPv6 internet traffic." | **Egress-only Internet Gateway**. |
-| "Assign a private, internal-only IPv6 address to a database instance." | **Not possible** *(Every IPv6 address in AWS is public/routable)*. |
-| "You cannot launch a new EC2 instance in a subnet that has IPv6 enabled." | **Create a new IPv4 CIDR** *(You have exhausted your IPv4 addresses)*. |
-| "Provide secure outbound internet access for instances using IPv4." | **NAT Gateway** *(Do not use Egress-only IGW, which is IPv6 only)*. |
-| "Enable resources in a VPC to communicate over both IPv4 and IPv6." | **Enable dual-stack mode**. |
+| If the requirement is...                                                                              | Use This Strategy:                                                     |
+| :---------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- |
+| "Allow EC2 instances to download updates over IPv6 while blocking all inbound IPv6 internet traffic." | **Egress-only Internet Gateway**.                                      |
+| "Assign a private, internal-only IPv6 address to a database instance."                                | **Not possible** *(Every IPv6 address in AWS is public/routable)*.     |
+| "You cannot launch a new EC2 instance in a subnet that has IPv6 enabled."                             | **Create a new IPv4 CIDR** *(You have exhausted your IPv4 addresses)*. |
+| "Provide secure outbound internet access for instances using IPv4."                                   | **NAT Gateway** *(Do not use Egress-only IGW, which is IPv6 only)*.    |
+| "Enable resources in a VPC to communicate over both IPv4 and IPv6."                                   | **Enable dual-stack mode**.                                            |
 
 ##### References

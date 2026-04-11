@@ -29,6 +29,4 @@ When you need to run code closer to the user to reduce latency, AWS offers two "
 | "Prevent Lambda from exhausting DB connections."          | **RDS Proxy**               |
 | "Trigger a Lambda whenever a DB snapshot is completed."   | **RDS Event Notifications** |
 
-**Next Step:** Since you've mastered compute and integration, would you like to move into **Amazon Route 53**? This is the core DNS service you'll use to route your global users to these CloudFront distributions and Load Balancers.
-
 ##### References

@@ -17,12 +17,12 @@ Transit Gateway integrates natively with VPN connections and Direct Connect Gate
 
 ### SAA Exam "Scenario" Table
 
-| If the requirement is... | Use This Strategy: |
-| :--- | :--- |
-| "Connect hundreds of VPCs and on-premises data centers using a central hub-and-spoke network topology." | **AWS Transit Gateway** |
-| "Deploy an application in AWS that requires the IP Multicast protocol." | **AWS Transit Gateway** *(It is the only AWS service that supports this)* |
-| "Share a Transit Gateway or a Direct Connect connection with multiple different AWS accounts." | **AWS Resource Access Manager (RAM)** |
-| "Significantly increase the bandwidth of a Site-to-Site VPN connection by aggregating multiple VPN tunnels." | **Transit Gateway + ECMP (Equal-cost multi-path routing)** |
-| "Strictly limit traffic between specific VPCs when they are all connected to a central networking hub." | **Transit Gateway Route Tables** |
+| If the requirement is...                                                                                     | Use This Strategy:                                                        |
+| :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------ |
+| "Connect hundreds of VPCs and on-premises data centers using a central hub-and-spoke network topology."      | **AWS Transit Gateway**                                                   |
+| "Deploy an application in AWS that requires the IP Multicast protocol."                                      | **AWS Transit Gateway** *(It is the only AWS service that supports this)* |
+| "Share a Transit Gateway or a Direct Connect connection with multiple different AWS accounts."               | **AWS Resource Access Manager (RAM)**                                     |
+| "Significantly increase the bandwidth of a Site-to-Site VPN connection by aggregating multiple VPN tunnels." | **Transit Gateway + ECMP (Equal-cost multi-path routing)**                |
+| "Strictly limit traffic between specific VPCs when they are all connected to a central networking hub."      | **Transit Gateway Route Tables**                                          |
 
 ##### References

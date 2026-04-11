@@ -28,6 +28,8 @@ When Lambda is triggered asynchronously (e.g., by **S3** or **SNS**):
 * **Duration:** It will attempt to re-run the function for up to **6 hours** with exponential backoff.
 * **Dead Letter Queue (DLQ):** If all retries fail, you can send the event to an **SQS queue** or **SNS topic** for manual debugging.
 
+### Summary of Pricing
+Lambda is often the most cost-effective choice for backend engineers because you only pay for **Requests** ($0.20 per million) and **Duration** (GB-seconds). If your code isn't running, you pay **zero**.
 
 ---
 
@@ -41,7 +43,5 @@ When Lambda is triggered asynchronously (e.g., by **S3** or **SNS**):
 | "Process 1,000 small images uploaded to S3 simultaneously."      | **Asynchronous Invocation** (Scales automatically). |
 | "Store a 2GB temporary file during processing."                  | **Increase /tmp storage** to 2GB+.                  |
 
-### Summary of Pricing
-Lambda is often the most cost-effective choice for backend engineers because you only pay for **Requests** ($0.20 per million) and **Duration** (GB-seconds). If your code isn't running, you pay **zero**.
 
 ##### References

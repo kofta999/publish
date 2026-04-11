@@ -27,7 +27,8 @@ For maximum security, you can restrict an Access Point so it is only reachable f
 #### 3. S3 Object Lambda
 S3 Object Lambda allows you to add your own code to S3 `GET` requests to process data before it is returned to an application.
 
-* **How it works:** 1. The application calls the **Object Lambda Access Point**.
+* **How it works:** 
+	1. The application calls the **Object Lambda Access Point**.
     2. S3 automatically invokes a **Lambda function**.
     3. The function retrieves the original object from S3, transforms it, and returns the result to the app.
 * **Key Use Cases for the SAA Exam:**

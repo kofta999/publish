@@ -38,7 +38,7 @@ A Partition Placement Group spreads instances across logical segments called **p
 **Key Features**
 * **Physical Layout:** Each partition represents a group of racks. AWS ensures that each partition has its own independent power and networking.
 * **Isolation:** Instances in Partition A do not share hardware with Partition B.
-* **Scale:** You can have up to 7 partitions per AZ.
+* **Scale:** You can have up to **7 partitions per AZ**.
 * **Use Cases:**
 	* Large distributed and replicated workloads.
     * HDFS, HBase, and Cassandra.

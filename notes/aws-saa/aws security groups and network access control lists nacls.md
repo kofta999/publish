@@ -28,12 +28,12 @@ You can use VPC Flow Logs to determine if a NACL or a Security Group is blocking
 
 ### SAA Exam "Scenario" Table
 
-| If the requirement is... | Use This Strategy: |
-| :--- | :--- |
-| "Block a specific, known malicious IP address from accessing your network." | **NACL (using an explicit DENY rule)** |
-| "Allow EC2 instances in a Web Tier to exclusively communicate with a DB Tier." | **Security Groups (reference the Web Tier SG ID as the source in the DB Tier SG)** |
-| "You opened port 80 inbound on a subnet, but clients are not receiving HTTP responses." | **Add an outbound NACL rule for Ephemeral Ports** |
-| "Users are getting a 'connection timeout' error when trying to reach an EC2 instance." | **Check the inbound rules on the EC2 Security Group** |
-| "Ensure return traffic from an allowed inbound request is automatically allowed back out." | **Security Group (because it is stateful)** |
+| If the requirement is...                                                                   | Use This Strategy:                                                                 |
+| :----------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
+| "Block a specific, known malicious IP address from accessing your network."                | **NACL (using an explicit DENY rule)**                                             |
+| "Allow EC2 instances in a Web Tier to exclusively communicate with a DB Tier."             | **Security Groups (reference the Web Tier SG ID as the source in the DB Tier SG)** |
+| "You opened port 80 inbound on a subnet, but clients are not receiving HTTP responses."    | **Add an outbound NACL rule for Ephemeral Ports**                                  |
+| "Users are getting a 'connection timeout' error when trying to reach an EC2 instance."     | **Check the inbound rules on the EC2 Security Group**                              |
+| "Ensure return traffic from an allowed inbound request is automatically allowed back out." | **Security Group (because it is stateful)**                                        |
 
 ##### References

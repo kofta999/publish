@@ -42,13 +42,13 @@ KDS is a massively scalable and durable real-time data streaming service. Use th
 
 ### SAA Exam "Scenario" Table
 
-| If the requirement is... | Use This Service: |
-| :--- | :--- |
-| "Analyze website clickstream data in real-time to detect fraud." | **Kinesis Data Streams** |
-| "Collect logs and store them in an S3 bucket for long-term audit." | **Amazon Data Firehose** |
-| "A single stream needs to be processed by three different apps." | **Kinesis Data Streams** |
-| "Load real-time IoT data into an Amazon Redshift cluster." | **Amazon Data Firehose** |
-| "Convert streaming JSON data to Parquet before storing in S3." | **Amazon Data Firehose (+ Lambda)** |
+| If the requirement is...                                           | Use This Service:                   |
+| :----------------------------------------------------------------- | :---------------------------------- |
+| "Analyze website clickstream data in real-time to detect fraud."   | **Kinesis Data Streams**            |
+| "Collect logs and store them in an S3 bucket for long-term audit." | **Amazon Data Firehose**            |
+| "A single stream needs to be processed by three different apps."   | **Kinesis Data Streams**            |
+| "Load real-time IoT data into an Amazon Redshift cluster."         | **Amazon Data Firehose**            |
+| "Convert streaming JSON data to Parquet before storing in S3."     | **Amazon Data Firehose (+ Lambda)** |
 
 ### Pro-Tip for the Exam: The "Buffer"
 If you see a question about **buffering**, **batching**, or **loading data into S3/Redshift**, the answer is almost always **Amazon Data Firehose**. If you see **real-time custom code** or **manual shard management**, look for **Kinesis Data Streams**.

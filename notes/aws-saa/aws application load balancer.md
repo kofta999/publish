@@ -16,7 +16,7 @@ Tags: #cloud/aws/networking
 
 #### Target Groups
 - EC2 Instances (managed by [[aws auto scaling groups|ASG]])
-- ECS tasks (managed by [[aws ecs fargate and ecr#Elastic Container Service (ECS)|ECS]])
+- ECS tasks (managed by [[aws elastic container service|ECS]])
 - [[aws lambda|Lambda]] Functions (HTTP requests translated into JSON events)
 - IP Addresses - must be private IPs
 

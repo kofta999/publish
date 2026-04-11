@@ -13,12 +13,12 @@ AWS VPC Peering allows you to privately connect two VPCs using the AWS network, 
 
 ### SAA Exam "Scenario" Table
 
-| If the requirement is... | Use This Strategy: |
-| :--- | :--- |
-| "Privately connect two VPCs located in different AWS accounts or regions." | **VPC Peering** |
-| "Instances in newly peered VPCs cannot communicate with each other." | **Update the Route Tables in both VPC subnets** |
-| "VPC A is peered to B, and B is peered to C. VPC A needs to access VPC C." | **Create a new, direct VPC Peering connection between A and C** *(Peering is not transitive)* |
-| "Connect two VPCs that both use the `10.0.0.0/16` network." | **Not possible with VPC Peering** *(CIDRs cannot overlap)* |
+| If the requirement is...                                                               | Use This Strategy:                                                                               |
+| :------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
+| "Privately connect two VPCs located in different AWS accounts or regions."             | **VPC Peering**                                                                                  |
+| "Instances in newly peered VPCs cannot communicate with each other."                   | **Update the Route Tables in both VPC subnets**                                                  |
+| "VPC A is peered to B, and B is peered to C. VPC A needs to access VPC C."             | **Create a new, direct VPC Peering connection between A and C** *(Peering is not transitive)*    |
+| "Connect two VPCs that both use the `10.0.0.0/16` network."                            | **Not possible with VPC Peering** *(CIDRs cannot overlap)*                                       |
 | "Allow traffic from an EC2 instance in a peered VPC without maintaining lists of IPs." | **Reference the peered VPC's Security Group ID in your inbound rules** *(if in the same region)* |
 
 ##### References

@@ -29,10 +29,10 @@ Pre-signed URLs grant temporary access to users who otherwise do not have permis
 
 #### SAA Exam "Comparison" Table
 
-| Feature | Best For... | Key Constraint |
-| :--- | :--- | :--- |
-| **S3 Access Logs** | **Auditing** and Compliance. | Target bucket must be in the **same region**. |
-| **CloudTrail Logs** | Tracking **API-level** changes (Bucket creation, policy updates). | Logged at the account level. |
-| **Pre-Signed URLs** | **Temporary access** for unauthenticated users. | Inherits permissions of the **signer**. |
+| Feature             | Best For...                                                       | Key Constraint                                |
+| :------------------ | :---------------------------------------------------------------- | :-------------------------------------------- |
+| **S3 Access Logs**  | **Auditing** and Compliance.                                      | Target bucket must be in the **same region**. |
+| **CloudTrail Logs** | Tracking **API-level** changes (Bucket creation, policy updates). | Logged at the account level.                  |
+| **Pre-Signed URLs** | **Temporary access** for unauthenticated users.                   | Inherits permissions of the **signer**.       |
 
 ##### References

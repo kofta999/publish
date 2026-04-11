@@ -20,7 +20,7 @@ For the SAA exam, you must distinguish between the role for the **instance** and
 * **EC2 Instance Profile (EC2 Launch Type only):** Used by the ECS Agent to pull images from ECR and send logs to CloudWatch.
 * **ECS Task Role:** Used by the **application** inside the container to access other AWS services (e.g., S3, DynamoDB). This is defined in the Task Definition and follows the principle of least privilege.
 
-![[Pasted image 20260321144630.png]]
+![[Pasted image 20260321144630.png|336]]
 
 #### 3. Storage & Networking
 * **Data Volumes (EFS):** You can mount **Amazon EFS** onto ECS tasks for both EC2 and Fargate. This provides **persistent, multi-AZ shared storage**.

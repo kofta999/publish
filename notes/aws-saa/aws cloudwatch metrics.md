@@ -32,9 +32,10 @@ CloudWatch automatically "rolls up" (aggregates) older data into less granular p
 
 #### 5. CloudWatch Metric Streams
 A push-based feature that continuously sends metrics to a destination with near-real-time delivery (2–3 minute latency).
-* **Destinations:** * **Amazon S3:** For long-term storage and data lake analysis.
-    * **Kinesis Data Firehose:** To deliver to Redshift, OpenSearch, or custom HTTP endpoints.
-    * **Third-Party Providers:** Datadog, New Relic, Splunk, Dynatrace, etc.
+* **Destinations:** 
+	* **Amazon S3:** For long-term storage and data lake analysis.
+	* **Kinesis Data Firehose:** To deliver to Redshift, OpenSearch, or custom HTTP endpoints.
+	* **Third-Party Providers:** Datadog, New Relic, Splunk, Dynatrace, etc.
 * **Benefits:** Eliminates the need for "Polling" (constantly calling the `GetMetricData` API), which is more complex and can be more expensive at scale.
 
 #### 6. CloudWatch Metric Insights

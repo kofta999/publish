@@ -31,12 +31,12 @@ PrivateLink allows you to securely expose your own services privately to a custo
 
 ### SAA Exam "Scenario" Table
 
-| If the requirement is... | Use This Strategy: |
-| :--- | :--- |
-| "Provide private, free access to Amazon S3 or DynamoDB from EC2 instances within a VPC." | **Gateway Endpoint (and update the Route Table)**. |
-| "Access an AWS service like Amazon SNS or SSM privately without going over the internet." | **Interface Endpoint (and configure a Security Group)**. |
-| "Access Amazon S3 privately from an on-premises data center connected via Direct Connect." | **Interface Endpoint for S3**. |
-| "You created a Gateway Endpoint for DynamoDB, but instances still cannot connect." | **Update the Route Table to target the Gateway Endpoint**. |
+| If the requirement is...                                                                                               | Use This Strategy:                                                  |
+| :--------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------ |
+| "Provide private, free access to Amazon S3 or DynamoDB from EC2 instances within a VPC."                               | **Gateway Endpoint (and update the Route Table)**.                  |
+| "Access an AWS service like Amazon SNS or SSM privately without going over the internet."                              | **Interface Endpoint (and configure a Security Group)**.            |
+| "Access Amazon S3 privately from an on-premises data center connected via Direct Connect."                             | **Interface Endpoint for S3**.                                      |
+| "You created a Gateway Endpoint for DynamoDB, but instances still cannot connect."                                     | **Update the Route Table to target the Gateway Endpoint**.          |
 | "Expose your proprietary application to another company's AWS account securely, without overlapping CIDRs or peering." | **AWS PrivateLink (VPC Endpoint Service) + Network Load Balancer**. |
 
 ##### References

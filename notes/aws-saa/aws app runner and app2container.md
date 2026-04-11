@@ -19,7 +19,8 @@ App Runner is the most "hands-off" way to deploy a web application on AWS. It ha
 This is a **migration tool** (CLI-based) specifically designed to help you "containerize" existing Java and .NET applications so they can run on AWS.
 
 * **The Problem:** You have a legacy app running on an on-premises VM or bare metal, and you want to move it to the cloud but don't want to rewrite the code.
-* **The Solution (A2C):** * **Analyze:** It scans your running applications (Java on Linux or .NET on Windows).
+* **The Solution (A2C):** 
+	* **Analyze:** It scans your running applications (Java on Linux or .NET on Windows).
     * **Containerize:** It automatically builds a Docker image and creates a Dockerfile.
     * **Deploy:** It generates **CloudFormation** templates to set up the infrastructure.
 * **Destinations:** It can push your newly containerized app to **Amazon ECS**, **Amazon EKS**, or **AWS App Runner**.

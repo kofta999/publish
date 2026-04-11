@@ -9,7 +9,7 @@ To establish a Site-to-Site VPN, you must configure two sides of the connection:
 *   **Customer Gateway (CGW):** A software application or physical device on the **customer (on-premises) side**. 
     *   **IP Address Requirement:** You must use a public, internet-routable IP address for the CGW device. If the device is behind a NAT device enabled for NAT traversal (NAT-T), you must use the public IP address of that NAT device.
 
-![[Pasted image 20260325145313.png|210]]
+![[Pasted image 20260325145313.png|263]]
 
 #### Crucial Configuration Steps
 *   **Route Propagation:** After setting up the VPN, an important step is to **enable Route Propagation** for the Virtual Private Gateway in the route table associated with your subnets.

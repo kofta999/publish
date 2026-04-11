@@ -32,10 +32,10 @@ An Internet Gateway allows resources inside a VPC (like EC2 instances) to connec
 
 ### SAA Exam "Scenario" Table
 
-| If the requirement is... | Use This Strategy: |
-| :--- | :--- |
-| "You need a subnet that can host exactly 29 EC2 instances." | **Choose a `/26` subnet (64 IPs)** *(A `/27` gives 32 IPs, but 32 - 5 reserved = 27 available, which is not enough)*. |
-| "You want to SSH into a newly created EC2 instance from your home computer." | **Use the Public IP** *(You cannot use the Private IP because you are not in the same network)*. |
-| "Instances in a public subnet cannot reach the internet despite having an IGW attached to the VPC." | **Update the Route Table** to route destination `0.0.0.0/0` to the `igw-id`. |
+| If the requirement is...                                                                            | Use This Strategy:                                                                                                    |
+| :-------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| "You need a subnet that can host exactly 29 EC2 instances."                                         | **Choose a `/26` subnet (64 IPs)** *(A `/27` gives 32 IPs, but 32 - 5 reserved = 27 available, which is not enough)*. |
+| "You want to SSH into a newly created EC2 instance from your home computer."                        | **Use the Public IP** *(You cannot use the Private IP because you are not in the same network)*.                      |
+| "Instances in a public subnet cannot reach the internet despite having an IGW attached to the VPC." | **Update the Route Table** to route destination `0.0.0.0/0` to the `igw-id`.                                          |
 
 ##### References

@@ -27,12 +27,12 @@ An AWS-managed service providing scalable, highly available network address tran
 
 ### SAA Exam "Scenario" Table
 
-| If the requirement is... | Use This Strategy: |
-| :--- | :--- |
-| "Provide internet access to private subnets with zero administrative maintenance and high bandwidth." | **NAT Gateway** |
-| "You deployed a custom EC2 instance to act as a NAT, but instances in the private subnet cannot reach the internet." | **Disable the 'Source / destination Check' on the NAT instance** |
-| "Design a fault-tolerant architecture for private instances needing internet access across three Availability Zones." | **Deploy three NAT Gateways (one in each AZ)** |
-| "You need to associate specific Security Group rules to your NAT traffic routing." | **NAT Instance** *(NAT Gateways do not support Security Groups)* |
-| "Your application in a private subnet requires up to 40 Gbps of outbound internet bandwidth." | **NAT Gateway** *(automatically scales up to 100 Gbps)* |
+| If the requirement is...                                                                                              | Use This Strategy:                                               |
+| :-------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
+| "Provide internet access to private subnets with zero administrative maintenance and high bandwidth."                 | **NAT Gateway**                                                  |
+| "You deployed a custom EC2 instance to act as a NAT, but instances in the private subnet cannot reach the internet."  | **Disable the 'Source / destination Check' on the NAT instance** |
+| "Design a fault-tolerant architecture for private instances needing internet access across three Availability Zones." | **Deploy three NAT Gateways (one in each AZ)**                   |
+| "You need to associate specific Security Group rules to your NAT traffic routing."                                    | **NAT Instance** *(NAT Gateways do not support Security Groups)* |
+| "Your application in a private subnet requires up to 40 Gbps of outbound internet bandwidth."                         | **NAT Gateway** *(automatically scales up to 100 Gbps)*          |
 
 ##### References

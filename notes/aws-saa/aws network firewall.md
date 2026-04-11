@@ -27,13 +27,11 @@ The Network Firewall supports thousands of rules and advanced filtering capabili
 
 ### SAA Exam "Scenario" Table
 
-| If the requirement is... | Use This Strategy: |
-| :--- | :--- |
-| "Deploy an intrusion-prevention system to inspect all traffic entering and leaving an entire VPC at Layers 3-7." | **AWS Network Firewall** |
-| "Ensure EC2 instances in a VPC can only initiate outbound connections to `*.mycompany.com`." | **AWS Network Firewall (Stateful domain list rules)** |
-| "Centrally deploy and manage a strict set of VPC firewall rules across multiple AWS accounts in an Organization." | **AWS Firewall Manager + AWS Network Firewall** |
-| "Block specific non-HTTP protocols, like SMB, from being routed over a Direct Connect connection." | **AWS Network Firewall (Protocol rules)** |
-| "Filter allowed traffic based on deep packet inspection and regex pattern matching." | **AWS Network Firewall** |
-
-
+| If the requirement is...                                                                                          | Use This Strategy:                                    |
+| :---------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------- |
+| "Deploy an intrusion-prevention system to inspect all traffic entering and leaving an entire VPC at Layers 3-7."  | **AWS Network Firewall**                              |
+| "Ensure EC2 instances in a VPC can only initiate outbound connections to `*.mycompany.com`."                      | **AWS Network Firewall (Stateful domain list rules)** |
+| "Centrally deploy and manage a strict set of VPC firewall rules across multiple AWS accounts in an Organization." | **AWS Firewall Manager + AWS Network Firewall**       |
+| "Block specific non-HTTP protocols, like SMB, from being routed over a Direct Connect connection."                | **AWS Network Firewall (Protocol rules)**             |
+| "Filter allowed traffic based on deep packet inspection and regex pattern matching."                              | **AWS Network Firewall**                              |
 ##### References
