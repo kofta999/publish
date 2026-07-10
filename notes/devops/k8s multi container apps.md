@@ -11,7 +11,7 @@ While a Pod typically contains a single container, Kubernetes allows for "Sideca
 ### Core Logic/Mechanism
 * **Network Sharing:** Containers share the same IP address and port space. If Container A listens on port 8080, Container B can reach it at `http://localhost:8080`.
 * **Storage Sharing:** By mounting the same **Volume**, containers can exchange data through the local filesystem (e.g., a log producer and a log forwarder).
-* **OS Internals:** Under the hood, the [[kubelet]] ensures these containers share the same Linux **Network Namespace** and **UTS Namespace**. However, they maintain separate **PID Namespaces** unless explicitly configured otherwise.
+* **OS Internals:** Under the hood, the [[k8s cluster components#1. kubelet|kubelet]] ensures these containers share the same Linux **Network Namespace** and **UTS Namespace**. However, they maintain separate **PID Namespaces** unless explicitly configured otherwise.
 
 ---
 
