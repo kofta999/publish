@@ -58,6 +58,16 @@ export default defineConfig({
           ),
         },
       ],
+      "/notes/devops": [
+        {
+          text: "DevOps Notes",
+          link: "/notes/devops/DevOps%20Interview%20Preparation%20Index",
+          items: generateSidebar(
+            "./notes/devops/DevOps Interview Preparation Index.md",
+            "/notes/devops",
+          ),
+        },
+      ],
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/kofta999" }],
